@@ -8,12 +8,17 @@ const State = () => {
 
   //let's see how it looks like under the hood
   const counterState = useState(0);
-  console.log(counterState)
+  console.log(counterState);
   /*
   useState is an array (more detailed it is a cortege, with two defined element) of two element, firs element is a value or current staate (of something) and second is a function,
   this function allows us to change first element of array
   */
 
+  /*
+  below I will add callback functions for buttons, if you will click on the +add button, 
+  you will change state and increase value by one other hands if you click on subtract button
+  you will decrease by one and the cherry on top is the plus 2 button, which adds 2 to the previous value
+  */
 
   return (
     <li>
