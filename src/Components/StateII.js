@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const randomNumber = () => {
   console.log("Random number was generated");
-  return 1
+  return 1;
 };
 
 const State = () => {
