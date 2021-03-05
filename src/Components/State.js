@@ -20,11 +20,11 @@ const State = () => {
   you will decrease by one and the cherry on top is the plus 2 button, which adds 2 to the previous value
   */
 
-  
+  console.log(counter)
 
   return (
-    <li>
-      <h4>1. userState hook</h4>
+    <li className="mb-3">
+      <h4>1. useState hook</h4>
       {counter >= 0 ? (
         <h4 className="text-success py-1 py-1">{counter}</h4>
       ) : (
