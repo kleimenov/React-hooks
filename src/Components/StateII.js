@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 
-const State = () => {
-  
-  const [counter, setCounter] = useState(0);
+const randomNumber = () => {
+  console.log("Random number was generated");
+  return 1
+};
 
+const State = () => {
+  //const [counter, setCounter] = useState(randomNumber());
+
+  //if you want t prevent double rendering, put callback function as input on state function
+  const [counter, setCounter] = useState(() => {
+    return randomNumber();
+  });
 
   return (
     <li className="mb-3">
