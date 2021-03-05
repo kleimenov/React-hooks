@@ -1,7 +1,19 @@
 import React, { useState } from "react";
 
 const State = () => {
+  //Let's implement a super simple counter to visualize how useState hook works
+
+  //let's define our initial state, set useState equal zero
   const [counter, setCounter] = useState(0);
+
+  //let's see how it looks like under the hood
+  const counterState = useState(0);
+  console.log(counterState)
+  /*
+  useState is an array of two element, firs element is a value or current staate (of something) and second is a function,
+  this function allows us to change first element of array
+  */
+
 
   return (
     <li>
