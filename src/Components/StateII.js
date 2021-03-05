@@ -5,7 +5,7 @@ const randomNumber = () => {
   return 1;
 };
 
-const State = () => {
+const StateII = () => {
   //const [counter, setCounter] = useState(randomNumber());
 
   //if you want t prevent double rendering, put callback function as input on state function
@@ -42,4 +42,4 @@ const State = () => {
   );
 };
 
-export default State;
+export default StateII;

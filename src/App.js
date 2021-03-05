@@ -1,6 +1,7 @@
 import React from "react";
 import State from "./Components/State";
-import StateII from "./Components/StateII"
+import StateII from "./Components/StateII";
+
 
 function App() {
   return (
