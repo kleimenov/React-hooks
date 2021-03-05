@@ -20,6 +20,13 @@ const State = () => {
   you will decrease by one and the cherry on top is the plus 2 button, which adds 2 to the previous value
   */
 
+  function plusTwo() {
+    setCounter((prevCounter) => {
+      return prevCounter + 1;
+    });
+    setCounter((prev) => prev + 1);
+  }
+
   return (
     <li>
       <h4>1. userState hook</h4>
@@ -45,7 +52,28 @@ const State = () => {
       >
         -subtract
       </button>
-      <button className="btn btn-warning ml-2">plus 2</button>
+      <button
+        onClick={() => {
+          setCounter((prevValue) => {
+            return prevValue + 1;
+          });
+          setCounter((prev) => prev + 1);
+        }}
+        className="btn btn-success ml-2"
+      >
+        add 2
+      </button>
+      <button
+        onClick={() => {
+          setCounter((prevValue) => {
+            return prevValue - 1;
+          });
+          setCounter((prev) => prev - 1);
+        }}
+        className="btn btn-danger ml-2"
+      >
+        subtract 2
+      </button>
     </li>
   );
 };
