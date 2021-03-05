@@ -10,7 +10,7 @@ const State = () => {
   const counterState = useState(0);
   console.log(counterState)
   /*
-  useState is an array of two element, firs element is a value or current staate (of something) and second is a function,
+  useState is an array (more detailed it is a cortege, with two defined element) of two element, firs element is a value or current staate (of something) and second is a function,
   this function allows us to change first element of array
   */
 
