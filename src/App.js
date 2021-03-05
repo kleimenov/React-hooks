@@ -1,7 +1,7 @@
 import React from "react";
 import State from "./Components/State";
 import StateII from "./Components/StateII";
-
+import StateIII from "./Components/StateIII";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
         <ul className="list-unstyled text-secondary">
           <State />
           <StateII />
+          <StateIII />
         </ul>
       </div>
     </div>
